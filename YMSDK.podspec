@@ -24,7 +24,9 @@ Pod::Spec.new do |spec|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = "YMSDK description"
+  spec.description  = <<-DESC
+                   YMSDK description
+                   DESC
 
   spec.homepage     = "https://github.com/wangdh06/YMSDK"
   # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -89,12 +91,12 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "YMSDK/**/*.{h,m}"
+  spec.source_files  = "YMSDK/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
   #静态库文件
-  spec.vendored_libraries = "YMSDK/**/SDK/*.a"
+  spec.vendored_libraries = "YMSDK/SDK/*.{a}"
   #资源文件
-  spec.resources = "YMSDK/**/SDK/*.{bundle}"
+  spec.resources = "YMSDK/SDK/*.{bundle}"
   spec.public_header_files = "YMSDK/*.h"
 
 
