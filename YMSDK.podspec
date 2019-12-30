@@ -91,13 +91,13 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "YMSDK/*.{h,m}"
+  spec.source_files  = "YMSDK/YMSDK/*.{h,m}"
   #spec.exclude_files = "Classes/Exclude"
   #静态库文件
-  spec.vendored_libraries = "YMSDK/SDK/*.{a}"
+  spec.vendored_libraries = "YMSDK/YMSDK/SDK/*.{a}"
   #资源文件
-  spec.resources = "YMSDK/SDK/*.{bundle}"
-  spec.public_header_files = "YMSDK/*.h"
+  spec.resources = "YMSDK/YMSDK/SDK/*.{bundle}"
+  spec.public_header_files = "YMSDK/YMSDK/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
